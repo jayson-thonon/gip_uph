@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIP UPH</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <span><i class="icon">📍</i> 22 RUE DU GENERAL GALLIENI – BP 31503 – 98 895 NOUMEA CEDEX</span>
+      <span><i class="icon">✉️</i> secretariat@uph.nc</span>
+      <span><i class="icon">📞</i> 41.49.00</span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <img src="image/logo_gip.png" alt="Logo" class="logo">
+
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="a_propos.html">Qui sommes-nous?</a></li>
+          <li><a href="nos _services.html">Nos Services</a></li>
+          <li><a href="nos_partenaires.html">Nos Partenaires</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#" class="login-button"><i class="icon">🔒</i> Connexion</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Bienvenue au GIP UPH</h1>
+    </div>
+  </section>
+
+  <section class="intro-section">
+    <div class="container intro-content">
+      <div class="intro-text">
+        <h2>Bienvenue au groupement d'intérét public union pour le handicap</h2>
+        <p>
+          Le GIP UPH est un groupement d’intérêt public œuvrant pour le développement social, 
+          la cohésion, et l'accompagnement des personnes en situation de précarité. 
+          Notre mission est de coordonner les acteurs, mutualiser les moyens, et soutenir les actions solidaires.
+        </p>
+      </div>
+      <div class="intro-image">
+        <img src="image/img9.jpg" alt="Présentation du GIP UPH">
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section">
+    <div class="container services-grid">
+      <div class="service-card" style="background-image: url('image/img3.jpg');">
+        <div class="overlay"><h3>Scolaire</h3></div>
+      </div>
+      <div class="service-card" style="background-image: url('image/img5.jpg');">
+        <div class="overlay"><h3>Domicile</h3></div>
+      </div>
+      <div class="service-card" style="background-image: url('image/img10.jpg');">
+        <div class="overlay"><h3>Vacances</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-column contact">
+        <h3>secretariat@uph.nc</h3>
+        <p><strong>41.49.00</strong></p>
+        <div class="footer-buttons">
+          <a href="#" class="btn blue">REJOIGNEZ-NOUS</a>
+          <a href="#" class="btn pink"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Address</h4>
+        <p>22 RUE DU GENERAL GALLIENI  – BP 31503 – 98 895 NOUMEA CEDEX</p>
+      </div>
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Scolaire</a></li>
+          <li><a href="#">Domicile</a></li>
+          <li><a href="#">Vacances</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Qui sommes-nous</h4>
+        <ul>
+          <li><a href="#">Présentation</a></li>
+          <li><a href="#">Mission</a></li>
+          <li><a href="#">Opération</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Copyrights, 2022 : GIP UPH – Réalisation BECOM / SWITCH</p>
+    </div>
+  </footer>
+  
+  
+  
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    toggleBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+
+    const scrollBtn = document.querySelector('.scroll-to-top');
+    window.addEventListener('scroll', () => {
+    scrollBtn.style.display = window.scrollY > 200 ? 'flex' : 'none';
+    });
+
+    document.querySelector('.scroll-to-top').addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+    });
+    });
+
+  </script>
+
+  <a href="#" class="scroll-to-top" aria-label="Retour en haut">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+  
+</body>
+</html>
