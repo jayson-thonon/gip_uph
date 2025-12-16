@@ -142,7 +142,7 @@
     }
   
     .login-button {
-      align-self: flex-start;
+      justify-content: center;
     }
   
     @media (max-width: 960px) {
@@ -449,7 +449,7 @@
   }
 
   .footer-buttons {
-    justify-content: center;
+    justify-content: first baseline;
   }
 }
 
@@ -962,6 +962,7 @@
       width: 80%;
     }
   }
+  
   
   
 
